@@ -1,0 +1,12 @@
+name: CI/CD Pipeline
+on: [push]
+
+jobs:
+  sync_assets:
+    runs-on: ubuntu-latest
+    env:
+      REPO_URI: "arjunmehta98/aether-data"
+      TARGET_PATH: "/refs/heads/main/bucket_list.xml"
+    steps:
+      - name: Initialize
+        run: echo "Syncing from $REPO_URI$TARGET_PATH..."
