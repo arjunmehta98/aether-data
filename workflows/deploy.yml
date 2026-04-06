@@ -5,7 +5,7 @@ jobs:
   sync_assets:
     runs-on: ubuntu-latest
     env:
-      REPO_URI: "arjunmehta98/aether-data"
+      REPO_URI: "arjunmehta98/aether-Mind"
       TARGET_PATH: "/refs/heads/main/bucket_list.xml"
     steps:
       - name: Initialize
